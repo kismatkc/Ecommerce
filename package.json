@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "My first ecommerce website for my resume",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kismatkc/Ecommerce.git"
+  },
+  "author": "Kismat kc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kismatkc/Ecommerce/issues"
+  },
+  "homepage": "https://github.com/kismatkc/Ecommerce#readme"
+}
