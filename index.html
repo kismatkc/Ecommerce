@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech2etc Ecommerce Tutorial</title>
+    <title>Ecommerce</title>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -14,34 +14,75 @@
   </head>
 
   <body>
-    <section id="header">
-      <div class="header__logoContainer">
-        <a href="#" id="logo"
-          ><img src="./img/logo.png" alt="company logo"
-        /></a>
-      </div>
-      <div class="header__navLinksContainer">
-        <ul>
-          <a href="index.html">
-            <li>Home</li>
-          </a>
-          <a href="shop.html">
-            <li>Shop</li>
-          </a>
-          <a href="blog.html">
-            <li>Blog</li>
-          </a>
-          <a href="about.html">
-            <li>About</li>
-          </a>
-          <a href="contact.html">
-            <li>Contact</li>
-          </a>
+    <section class="header">
+      <a href="#" class="header__logoContainer"
+        ><img src="./img/logo.png" alt="company logo"
+      /></a>
+
+      <ul class="header__navLinksContainer">
+        <li><a class="active" href="index.html"> Home</a></li>
+        <li><a href="shop.html"> Shop</a></li>
+        <li><a href="blog.html"> Blog</a></li>
+        <li><a href="about.html"> About</a></li>
+        <li><a href="contact.html"> Contact us</a></li>
+        <li>
           <a href="cart.html">
             <i class="far fa-shopping-bag"></i>
-            <li></li>
           </a>
-        </ul>
+        </li>
+      </ul>
+    </section>
+    <section id="hero">
+      <h2>Trade-in offer</h2>
+      <h2>Super value deals</h2>
+      <h1>On all products</h1>
+      <p>Save more with coupons up to 70% off</p>
+      <button class="btn">Shop now</button>
+    </section>
+    <section class="feature section-p1">
+      <div class="feature__cards">
+        <figure class="card">
+          <img src="./img/features/f1.png" alt="free shipping" />
+          <figcaption>Free shipping</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="./img/features/f2.png" alt="free shipping" />
+          <figcaption>Free shipping</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="./img/features/f3.png" alt="free shipping" />
+          <figcaption>Free shipping</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="./img/features/f4.png" alt="free shipping" />
+          <figcaption>Free shipping</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="./img/features/f5.png" alt="free shipping" />
+          <figcaption>Free shipping</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="./img/features/f6.png" alt="free shipping" />
+          <figcaption>Free shipping</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="products">
+      <h1>Featured products</h1>
+      <h3>Summer collection New modern design</h3>
+      <div class="products__cards">
+        <div class="card">
+          <img src="./img/products/f1.jpg" alt="f1 product" />
+          <h4>Adidas</h4>
+          <h3>Cartoon astronut tshirts</h3>
+          <div class="card__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
