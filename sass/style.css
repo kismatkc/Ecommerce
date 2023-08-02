@@ -180,4 +180,54 @@ body {
   background-color: #fff2e5;
 }
 
+.products {
+  text-align: center;
+}
+.products h4:nth-of-type(1) {
+  font-weight: 300;
+}
+.products h4:nth-last-of-type(1) {
+  font-weight: 500;
+  color: #088178;
+}
+.products h3 {
+  font-weight: 300;
+}
+.products__cards {
+  display: flex;
+  flex-direction: column;
+}
+.products__cards .card {
+  width: 25rem;
+  border: 3px solid black;
+  padding: 1rem 1.2rem;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 2rem 2rem 3rem 0rem rgba(0, 0, 0, 0.03);
+  transition: 0.2 ease;
+}
+.products__cards .card__stars i {
+  color: rgb(243, 181, 25);
+}
+.products__cards .card a {
+  display: flex;
+  justify-content: flex-end;
+}
+.products__cards .card a .fa-shopping-cart-green {
+  background-color: #e8f6ea;
+  color: #088178;
+  border-radius: 50%;
+  border: 1px solid #cce7d0;
+  padding: 1rem;
+  font-size: large;
+}
+.products__cards .card img {
+  width: 100%;
+  border-radius: 20px;
+}
+.products__cards .card:hover {
+  cursor: pointer;
+  box-shadow: 2rem 2rem 3rem 0rem rgba(0, 0, 0, 0.06);
+}
+
 /*# sourceMappingURL=style.css.map */
