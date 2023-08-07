@@ -181,7 +181,14 @@ body {
 }
 
 .products {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.products > * {
+  margin-bottom: 2rem;
 }
 .products h4:nth-of-type(1) {
   font-weight: 300;
@@ -195,7 +202,9 @@ body {
 }
 .products__cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .products__cards .card {
   width: 25rem;
@@ -205,6 +214,11 @@ body {
   border-radius: 25px;
   box-shadow: 2rem 2rem 3rem 0rem rgba(0, 0, 0, 0.03);
   transition: 0.2 ease;
+  margin: 0 3rem 3rem 0;
+  margin-bottom: 3rem;
+}
+.products__cards .card > * {
+  margin-bottom: 0.8rem;
 }
 .products__cards .card__stars i {
   color: rgb(243, 181, 25);
@@ -228,6 +242,39 @@ body {
 .products__cards .card:hover {
   cursor: pointer;
   box-shadow: 2rem 2rem 3rem 0rem rgba(0, 0, 0, 0.06);
+}
+
+.banner {
+  text-align: center;
+  background-image: url(../img/banner/b2.jpg);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  row-gap: 2rem;
+}
+.banner h4 {
+  color: inherit;
+}
+.banner h2 {
+  color: inherit;
+}
+.banner h2 span {
+  color: #ef3636;
+}
+.banner button {
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border-width: 0.1px;
+  transition: 0.2s;
+}
+.banner button:hover {
+  background-color: #088178;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
