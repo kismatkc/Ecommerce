@@ -277,4 +277,41 @@ body {
   cursor: pointer;
 }
 
+.advertisement {
+  height: 70vh;
+  padding: 4rem 8rem;
+  width: 100%;
+}
+.advertisement__boards {
+  display: grid;
+  border: 1px solid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(6, 1fr);
+}
+.advertisement__boards > * {
+  padding: 1rem;
+  margin: 2rem;
+  border: 1px solid;
+}
+.advertisement__boards .board1 {
+  grid-area: 1/span 3;
+}
+.advertisement__boards .board2 {
+  grid-area: 1/span 3;
+}
+.advertisement__boards .board3 {
+  grid-area: 2/span 2;
+}
+.advertisement__boards .board4 {
+  grid-area: 2/span 2;
+}
+.advertisement__boards .board5 {
+  grid-area: 2/span 2;
+}
+.advertisement__boards .board6 {
+  grid-area: 2/span 2;
+}
+
 /*# sourceMappingURL=style.css.map */
