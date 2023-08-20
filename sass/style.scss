@@ -410,7 +410,7 @@ body {
       border: none;
       &:focus {
         outline: none;
-        // border: 0.2rem solid #088178;
+
         box-shadow: -5px 5px 50px 0 rgba($color: #088178, $alpha: 0.3);
       }
       &::placeholder {
@@ -424,5 +424,109 @@ body {
       border-radius: 0 0.4rem 0.4rem 0;
       border: none;
     }
+  }
+}
+
+.footer {
+  height: 23vh;
+  padding: 8rem 10rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "contact about account install"
+    "copyright copyright copyright copyright";
+  & > * {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__contact {
+    grid-area: contact;
+
+    img {
+      margin-bottom: 1.4rem;
+      width: 50%;
+      height: 100%;
+    }
+    p {
+      margin: 0.4rem;
+      span {
+        font-weight: 600;
+        color: #000;
+      }
+    }
+    h4 {
+      margin-bottom: 1.4rem;
+      margin-top: 1rem;
+    }
+    .social {
+      display: flex;
+      column-gap: 1.2rem;
+      font-size: large;
+    }
+  }
+  &__about {
+    grid-area: about;
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      row-gap: 1rem;
+
+      li {
+        &:nth-child(1) {
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+        &:not(:first-child) {
+        }
+        a {
+          text-decoration: none;
+          color: #000;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  &__account {
+    grid-area: account;
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      row-gap: 1rem;
+
+      li {
+        &:nth-child(1) {
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+        &:not(:first-child) {
+        }
+        a {
+          text-decoration: none;
+          color: #000;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  &__install {
+    grid-area: install;
+    display: flex;
+    flex-direction: column;
+    .stores {
+      display: flex;
+      column-gap: 1.1rem;
+      img {
+        outline: 0.1rem solid #0881797b;
+        border-radius: 5px;
+      }
+    }
+  }
+  &__copyright {
+    grid-area: copyright;
+    text-align: center;
   }
 }

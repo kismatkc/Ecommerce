@@ -383,4 +383,95 @@ body {
   border: none;
 }
 
+.footer {
+  height: 23vh;
+  padding: 8rem 10rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "contact about account install" "copyright copyright copyright copyright";
+}
+.footer > * {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer__contact {
+  grid-area: contact;
+}
+.footer__contact img {
+  margin-bottom: 1.4rem;
+  width: 50%;
+  height: 100%;
+}
+.footer__contact p {
+  margin: 0.4rem;
+}
+.footer__contact p span {
+  font-weight: 600;
+  color: #000;
+}
+.footer__contact h4 {
+  margin-bottom: 1.4rem;
+  margin-top: 1rem;
+}
+.footer__contact .social {
+  display: flex;
+  column-gap: 1.2rem;
+  font-size: large;
+}
+.footer__about {
+  grid-area: about;
+}
+.footer__about ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  row-gap: 1rem;
+}
+.footer__about ul li:nth-child(1) {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.footer__about ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+.footer__account {
+  grid-area: account;
+}
+.footer__account ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  row-gap: 1rem;
+}
+.footer__account ul li:nth-child(1) {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.footer__account ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+.footer__install {
+  grid-area: install;
+  display: flex;
+  flex-direction: column;
+}
+.footer__install .stores {
+  display: flex;
+  column-gap: 1.1rem;
+}
+.footer__install .stores img {
+  outline: 0.1rem solid rgba(8, 129, 121, 0.4823529412);
+  border-radius: 5px;
+}
+.footer__copyright {
+  grid-area: copyright;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
